@@ -3,51 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Análisis ejecutivos y reportes de la Fundación Boinas Verdes RyM">
-    <title>Fundación Boinas Verdes RyM - Análisis Ejecutivos</title>
+    <title>SME Intel Center - Fundación Boinas Verdes</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        #auth-overlay {
+            position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+            background: #121212; display: flex; flex-direction: column;
+            justify-content: center; align-items: center; z-index: 9999;
+            color: white; font-family: sans-serif; text-align: center;
+        }
+        .auth-box { background: #242424; padding: 50px; border-radius: 15px; border: 1px solid #2c5f2d; box-shadow: 0 0 30px rgba(44, 95, 45, 0.3); }
+        input[type="password"] { padding: 15px; width: 280px; border-radius: 5px; border: 1px solid #333; background: #1a1a1a; color: white; margin: 20px 0; display: block; font-size: 1.1em; }
+        button { padding: 15px 40px; background: #2c5f2d; color: white; border: none; border-radius: 5px; cursor: pointer; font-weight: bold; font-size: 1em; transition: 0.3s; }
+        button:hover { background: #3e863f; }
+    </style>
 </head>
-<body>
+<body class="locked">
+    <div id="auth-overlay">
+        <div class="auth-box">
+            <div style="font-size: 4em; margin-bottom: 10px;">🎖️</div>
+            <h1 style="border:none; color:white;">FUNDACIÓN BOINAS VERDES</h1>
+            <p style="color:#888;">ACCESO RESTRINGIDO - PERSONAL AUTORIZADO</p>
+            <input type="password" id="pass-input" placeholder="Introduzca PIN de Seguridad">
+            <button onclick="checkPass()">AUTENTICAR</button>
+            <p id="error-msg" style="color: #ff6b35; margin-top: 15px; display: none;">Credenciales Incorrectas</p>
+        </div>
+    </div>
+
+    <script>
+        const VALID_PASS = "Fundacion2026@";
+        function checkPass() {
+            const input = document.getElementById('pass-input').value;
+            if (input === VALID_PASS) {
+                sessionStorage.setItem('auth_rym', 'true');
+                document.getElementById('auth-overlay').style.display = 'none';
+                document.body.classList.remove('locked');
+            } else {
+                document.getElementById('error-msg').style.display = 'block';
+            }
+        }
+        if (sessionStorage.getItem('auth_rym') === 'true') {
+            document.getElementById('auth-overlay').style.display = 'none';
+            document.body.classList.remove('locked');
+        }
+        document.getElementById('pass-input').addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') checkPass();
+        });
+    </script>
+
     <div class="container">
         <header>
-            <div class="logo">🎖️</div>
-            <h1>Fundación Boinas Verde RyM</h1>
-            <p class="subtitle">Análisis Ejecutivos y Reportes Estratégicos</p>
-            
-            <div class="stats">
-                <div class="stat-item">
-                    <div class="stat-number">1</div>
-                    <div class="stat-label">Documentos</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-number">2026</div>
-                    <div class="stat-label">Año Actual</div>
-                </div>
-            </div>
+            <h1>🗞️ Intel Center: Análisis Estratégico</h1>
+            <p>Repositorio central de briefings de la Fundación de los Boinas Verdes</p>
         </header>
-        
         <main>
-            <div class="grid">
-                
-        <div class="card">
-            <h3>Informe mensual de Redes Sociales – Facebook</h3>
-            <p class="card-description">Fundación de los Boinas Verdes Roble y Machete (RyM)</p>
-            <a href="260115_Informe-mensual-de-Redes-Sociales-Facebook.html">Ver análisis completo →</a>
-            <p class="date">📅 15/01/2026</p>
-            <div class="badge">Análisis Ejecutivo</div>
-        </div>
-        
-            </div>
+            <div class="doc-item"><div><strong>260115 Informe-Mensual-De-Redes-Sociales-Facebook</strong><br><small>2026-01-16 16:22</small></div><a href="260115_Informe-mensual-de-Redes-Sociales-Facebook.html">LEER INFORME →</a></div>
         </main>
-        
-        <footer>
-            <p><strong>Fundación de los Boinas Verdes RyM</strong></p>
-            <p>Última actualización: 15 de January de 2026, 15:42</p>
-            <div class="footer-links">
-                <a href="https://github.com/mcasrom/fundacion_rym" target="_blank">GitHub Repository</a>
-            </div>
+        <footer style="margin-top:40px; text-align:center; font-size:0.8em; color:#666;">
+            © 2026 Fundación Boinas Verdes - Clasificado: SME-EYES-ONLY
         </footer>
     </div>
 </body>
 </html>
-
