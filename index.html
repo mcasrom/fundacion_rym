@@ -2,7 +2,12 @@
 <html lang="es"><head><meta charset="UTF-8"><title>Fundación RyM</title>
 <style>
     body { background: #1a1a1a; color: white; font-family: sans-serif; padding: 50px; }
-    .doc-item { background: #242424; padding: 15px; margin: 10px; border-left: 5px solid #2c5f2d; display: flex; justify-content: space-between; }
+    .container { max-width: 800px; margin: auto; }
+    .section-title { border-bottom: 2px solid #2c5f2d; margin-top: 30px; padding-bottom: 10px; color: #4caf50; }
+    .doc-item { background: #242424; padding: 15px; margin: 10px 0; border-left: 5px solid #2c5f2d; display: flex; justify-content: space-between; align-items: center; }
+    .pdf-item { border-left: 5px solid #a33333; }
+    a { color: #4caf50; text-decoration: none; font-weight: bold; border: 1px solid #4caf50; padding: 5px 10px; border-radius: 4px; }
+    a:hover { background: #4caf50; color: white; }
     #auth-overlay { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: #121212; z-index: 9999; display: flex; justify-content: center; align-items: center; flex-direction: column; }
     input { padding: 10px; margin: 10px; border-radius: 5px; border: none; }
     button { padding: 10px 20px; background: #2c5f2d; color: white; border: none; border-radius: 5px; cursor: pointer; }
@@ -22,5 +27,13 @@
         }
         if (sessionStorage.getItem('auth_rym') === 'true') document.getElementById('auth-overlay').style.display = 'none';
     </script>
-    <div class="container"><h1>Índice de Informes</h1><div class="doc-item"><strong>260116_An-lisis-Cr-tico-del-Plan-de-Actuaci-n-2026</strong> <a href="260116_An-lisis-Cr-tico-del-Plan-de-Actuaci-n-2026.html">LEER →</a></div><div class="doc-item"><strong>260115_Informe-mensual-de-Redes-Sociales-Facebook</strong> <a href="260115_Informe-mensual-de-Redes-Sociales-Facebook.html">LEER →</a></div></div>
+    <div class="container">
+        <h1>Sistema de Análisis Estratégico</h1>
+        
+        <h2 class="section-title">📊 Informes Ejecutivos</h2>
+        <div class="doc-item"><strong>260116_An-lisis-Cr-tico-del-Plan-de-Actuaci-n-2026</strong> <a href="260116_An-lisis-Cr-tico-del-Plan-de-Actuaci-n-2026.html">LEER →</a></div><div class="doc-item"><strong>260115_Informe-mensual-de-Redes-Sociales-Facebook</strong> <a href="260115_Informe-mensual-de-Redes-Sociales-Facebook.html">LEER →</a></div>
+        
+        <h2 class="section-title">📁 Documentación y Contratos (PDF)</h2>
+        <div class="doc-item pdf-item"><strong>📄 251220 ACUERDO COLABORACION ROBLE Y MACHETE (FIRMADO)_signed.pdf</strong> <a href="Fundacion_pdfs/251220 ACUERDO COLABORACION ROBLE Y MACHETE (FIRMADO)_signed.pdf" target="_blank">ABRIR PDF</a></div><div class="doc-item pdf-item"><strong>📄 F_18324_E10802_T120_D328147_H202512191257354614 PLAN ACTUACION 2026.pdf</strong> <a href="Fundacion_pdfs/F_18324_E10802_T120_D328147_H202512191257354614 PLAN ACTUACION 2026.pdf" target="_blank">ABRIR PDF</a></div><div class="doc-item pdf-item"><strong>📄 251229 OBJETIVOS FUNDACIÓN 2026.pdf</strong> <a href="Fundacion_pdfs/251229 OBJETIVOS FUNDACIÓN 2026.pdf" target="_blank">ABRIR PDF</a></div>
+    </div>
 </body></html>
