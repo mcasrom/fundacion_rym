@@ -1,0 +1,1081 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-01-16 vie 16:40 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Análisis Crítico del Plan de Actuación 2026</title>
+<meta name="author" content="Análisis Experto en Fundaciones Sin Ánimo de Lucro y RRSS" />
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Análisis Crítico del Plan de Actuación 2026
+<br />
+<span class="subtitle">Fundación Roble y Machete (Registro 2744JUS)</span>
+</h1>
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#orgd2f3fbf">1. Referencias Documentales</a></li>
+<li><a href="#org877f7e0">2. 1. Análisis de Estructura Organizativa</a>
+<ul>
+<li><a href="#orga64596d">2.1. 1.1 Modelo de Recursos Humanos</a></li>
+<li><a href="#orgf3aa4a8">2.2. 1.2 Aspectos Positivos</a></li>
+<li><a href="#org375f970">2.3. 1.3 Aspectos Críticos</a></li>
+</ul>
+</li>
+<li><a href="#org058ec4e">3. 2. Análisis Económico-Financiero</a>
+<ul>
+<li><a href="#orgc05bff4">3.1. 2.1 Estructura de Ingresos y Gastos</a></li>
+<li><a href="#org6a6d991">3.2. 2.2 Matriz de Viabilidad Financiera</a></li>
+<li><a href="#org41b1e8f">3.3. 2.3 Análisis Crítico Económico</a></li>
+</ul>
+</li>
+<li><a href="#org3e042c6">4. 3. Evaluación de Actividades</a>
+<ul>
+<li><a href="#orgb9324ad">4.1. 3.1 Programa AIRE (A1) - FORTALEZA</a></li>
+<li><a href="#orgc6679af">4.2. 3.2 Actividades Culturales (A6-A8, A11-A12) - RIESGO MEDIO</a></li>
+<li><a href="#org4ca4547">4.3. 3.3 Matriz de Impacto vs. Recursos</a></li>
+</ul>
+</li>
+<li><a href="#orgab06452">5. 4. Análisis de Objetivos y KPIs</a>
+<ul>
+<li><a href="#orge29a1ec">5.1. 4.1 Coherencia Objetivos-Actividades</a></li>
+<li><a href="#org44d6c62">5.2. 4.2 Evaluación de Indicadores</a></li>
+</ul>
+</li>
+<li><a href="#org72a24e5">6. 5. Estrategia de Comunicación y RRSS</a>
+<ul>
+<li><a href="#orgfd620a3">6.1. 5.1 Oportunidades para RRSS</a></li>
+<li><a href="#org9e42ca2">6.2. 5.2 Estrategia RRSS Recomendada</a></li>
+<li><a href="#orgbc3564d">6.3. 5.3 Riesgos Reputacionales</a></li>
+</ul>
+</li>
+<li><a href="#orgad45fac">7. 6. Recomendaciones Estratégicas</a>
+<ul>
+<li><a href="#orgcb5fa01">7.1. 6.1 Corto Plazo (1-6 meses)</a></li>
+<li><a href="#org7dfa6b1">7.2. 6.2 Medio Plazo (6-12 meses)</a></li>
+<li><a href="#orgb44a32c">7.3. 6.3 Largo Plazo (2027+)</a></li>
+</ul>
+</li>
+<li><a href="#orgcf19c03">8. 7. Conclusiones</a>
+<ul>
+<li><a href="#orgc18daa6">8.1. 7.1 Fortalezas Destacadas</a></li>
+<li><a href="#org96311c3">8.2. 7.2 Debilidades Críticas</a></li>
+<li><a href="#org7445d80">8.3. 7.3 Viabilidad Global</a></li>
+<li><a href="#org3908b2b">8.4. 7.4 Recomendación Final</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgd2f3fbf" class="outline-2">
+<h2 id="orgd2f3fbf"><span class="section-number-2">1.</span> Referencias Documentales</h2>
+<div class="outline-text-2" id="text-1">
+<ul class="org-ul">
+<li>Documento 1: Plan de Actuación 2026 (Ref: 728088093, Fecha: 19/12/2025)</li>
+<li>Documento 2: Objetivos Fundación 2026 (Fecha: 25/12/2025)</li>
+<li>Fundación: Roble y Machete, Registro 2744JUS</li>
+<li>Ámbito: Comunidad Valenciana y Región de Murcia</li>
+<li>Ejercicio: 01/01/2026 - 31/12/2026</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org877f7e0" class="outline-2">
+<h2 id="org877f7e0"><span class="section-number-2">2.</span> 1. Análisis de Estructura Organizativa</h2>
+<div class="outline-text-2" id="text-2">
+</div>
+<div id="outline-container-orga64596d" class="outline-3">
+<h3 id="orga64596d"><span class="section-number-3">2.1.</span> 1.1 Modelo de Recursos Humanos</h3>
+<div class="outline-text-3" id="text-2-1">
+<p>
+La fundación opera exclusivamente con voluntariado, sin personal asalariado:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-plantuml">@startuml
+package "Recursos Humanos FRyM" {
+  [Personal Voluntario: 179 personas] as VOL
+  [Personal Asalariado: 0] as ASA
+  [Personal Contratado: 0] as CON
+
+  VOL --&gt; [629 horas/año totales]
+  ASA --&gt; [RIESGO: Sostenibilidad]
+  CON --&gt; [RIESGO: Profesionalización]
+}
+
+note right of VOL
+  Distribución por actividad:
+  - A1: 10 vol. (120h)
+  - A2: 10 vol. (300h)
+  - A9-A10: 50 vol. cada uno
+end note
+@enduml
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgf3aa4a8" class="outline-3">
+<h3 id="orgf3aa4a8"><span class="section-number-3">2.2.</span> 1.2 Aspectos Positivos</h3>
+<div class="outline-text-3" id="text-2-2">
+<ul class="org-ul">
+<li><b>Compromiso social genuino</b>: Modelo 100% voluntario demuestra vocación auténtica</li>
+<li><b>Diversificación de actividades</b>: 12 programas distintos cubren múltiples necesidades</li>
+<li><b>Enfoque integral</b>: Atención médica, psicológica, social y laboral</li>
+<li><b>Alianzas estratégicas</b>: Convenios con Universidad de Alicante, ISEN Cartagena, instituciones públicas</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org375f970" class="outline-3">
+<h3 id="org375f970"><span class="section-number-3">2.3.</span> 1.3 Aspectos Críticos</h3>
+<div class="outline-text-3" id="text-2-3">
+<ol class="org-ol">
+<li><b>RIESGO DE SOSTENIBILIDAD OPERATIVA</b>
+<ul class="org-ul">
+<li>Dependencia total de voluntarios (burnout potencial)</li>
+<li>629 horas anuales totales para gestionar 1.250 beneficiarios potenciales</li>
+<li>Ratio: 0.5 horas/año por beneficiario (INSUFICIENTE)</li>
+</ul></li>
+
+<li><b>FALTA DE PROFESIONALIZACIÓN</b>
+<ul class="org-ul">
+<li>Actividades sanitarias/psicológicas requieren profesionales titulados</li>
+<li>No hay mención de seguros de responsabilidad civil</li>
+<li>Ausencia de protocolos de calidad visibles</li>
+</ul></li>
+
+<li><b>AMBIGÜEDAD EN BENEFICIARIOS</b>
+<ul class="org-ul">
+<li>A2 declara 1.100 beneficiarios pero marca "NÚMERO INDETERMINADO"</li>
+<li>Contradicción entre datos cuantitativos y cualitativos</li>
+</ul></li>
+</ol>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org058ec4e" class="outline-2">
+<h2 id="org058ec4e"><span class="section-number-2">3.</span> 2. Análisis Económico-Financiero</h2>
+<div class="outline-text-2" id="text-3">
+</div>
+<div id="outline-container-orgc05bff4" class="outline-3">
+<h3 id="orgc05bff4"><span class="section-number-3">3.1.</span> 2.1 Estructura de Ingresos y Gastos</h3>
+<div class="outline-text-3" id="text-3-1">
+<div class="org-src-container">
+<pre class="src src-plantuml">@startuml
+!define INCOME #90EE90
+!define EXPENSE #FFB6C1
+
+rectangle "INGRESOS: 28.350€" INCOME {
+  rectangle "Subvenciones públicas\n10.000€ (35.3%)" as SUB
+  rectangle "Aportaciones privadas\n10.000€ (35.3%)" as PRIV
+  rectangle "Actividades mercantiles\n7.750€ (27.3%)" as MERC
+  rectangle "Servicios propios\n600€ (2.1%)" as SERV
+}
+
+rectangle "GASTOS: 8.700€" EXPENSE {
+  rectangle "Ayudas monetarias\n3.000€ (34.5%)" as AYU
+  rectangle "Colaboraciones/órganos\n5.700€ (65.5%)" as COL
+}
+
+rectangle "SUPERÁVIT\n19.650€" #87CEEB
+
+SUB --&gt; "SUPERÁVIT\n19.650€"
+PRIV --&gt; "SUPERÁVIT\n19.650€"
+MERC --&gt; "SUPERÁVIT\n19.650€"
+@enduml
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org6a6d991" class="outline-3">
+<h3 id="org6a6d991"><span class="section-number-3">3.2.</span> 2.2 Matriz de Viabilidad Financiera</h3>
+<div class="outline-text-3" id="text-3-2">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Indicador</th>
+<th scope="col" class="org-left">Valor</th>
+<th scope="col" class="org-left">Evaluación</th>
+<th scope="col" class="org-left">Observaciones</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Ingresos totales</td>
+<td class="org-left">28.350€</td>
+<td class="org-left">BAJO</td>
+<td class="org-left">Insuficiente para estructura estable</td>
+</tr>
+
+<tr>
+<td class="org-left">Dependencia subvenciones</td>
+<td class="org-left">70.6%</td>
+<td class="org-left">CRÍTICO</td>
+<td class="org-left">Riesgo ante cambios políticos</td>
+</tr>
+
+<tr>
+<td class="org-left">Ratio gasto/ingreso</td>
+<td class="org-left">30.7%</td>
+<td class="org-left">ÓPTIMO</td>
+<td class="org-left">Pero ¿dónde va el 69.3% restante?</td>
+</tr>
+
+<tr>
+<td class="org-left">Diversificación ingresos</td>
+<td class="org-left">4 fuentes</td>
+<td class="org-left">ACEPTABLE</td>
+<td class="org-left">Equilibrio público-privado</td>
+</tr>
+
+<tr>
+<td class="org-left">Gasto en beneficiarios</td>
+<td class="org-left">3.000€</td>
+<td class="org-left">MUY BAJO</td>
+<td class="org-left">2.4€/beneficiario (A1: 30 personas)</td>
+</tr>
+
+<tr>
+<td class="org-left">Objetivo económico 2026</td>
+<td class="org-left">50.000€</td>
+<td class="org-left">AMBICIOSO</td>
+<td class="org-left">+76% respecto a ingresos previstos</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div id="outline-container-org41b1e8f" class="outline-3">
+<h3 id="org41b1e8f"><span class="section-number-3">3.3.</span> 2.3 Análisis Crítico Económico</h3>
+<div class="outline-text-3" id="text-3-3">
+<p>
+<b>ALERTAS IMPORTANTES:</b>
+</p>
+
+<ol class="org-ol">
+<li><b>OPACIDAD EN DESTINO DE FONDOS</b>
+<ul class="org-ul">
+<li>Superávit previsto: 19.650€ (69.3% ingresos)</li>
+<li>No hay plan explícito para este excedente</li>
+<li>¿Reservas? ¿Inversiones futuras? ¿Capitalización?</li>
+</ul></li>
+
+<li><b>INCOHERENCIA GASTOS/OBJETIVOS</b>
+<ul class="org-ul">
+<li>Objetivo 5 (acción social): "asistencia de 9.000€"</li>
+<li>Presupuesto real ayudas: 3.000€</li>
+<li>DESFASE: -6.000€ (67% inferior)</li>
+</ul></li>
+
+<li><b>RIESGO ACTIVIDADES MERCANTILES</b>
+<ul class="org-ul">
+<li>7 actividades mercantiles (conciertos, conferencias, deportes)</li>
+<li>Ingresos previstos: 7.750€</li>
+<li>Gastos asociados: 5.700€</li>
+<li>Margen: 26.5% (aceptable pero sin colchón de error)</li>
+</ul></li>
+</ol>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org3e042c6" class="outline-2">
+<h2 id="org3e042c6"><span class="section-number-2">4.</span> 3. Evaluación de Actividades</h2>
+<div class="outline-text-2" id="text-4">
+</div>
+<div id="outline-container-orgb9324ad" class="outline-3">
+<h3 id="orgb9324ad"><span class="section-number-3">4.1.</span> 3.1 Programa AIRE (A1) - FORTALEZA</h3>
+<div class="outline-text-3" id="text-4-1">
+<div class="org-src-container">
+<pre class="src src-plantuml">@startuml
+skinparam componentStyle rectangle
+
+component "PROGRAMA AIRE" {
+  [APOYO\nAcompañamiento médico/social] as AP
+  [INFORMACIÓN\nAcceso recursos legales] as IN
+  [RECUPERACIÓN\nTratamientos específicos] as RE
+
+  AP -down-&gt; [30 beneficiarios]
+  IN -down-&gt; [30 beneficiarios]
+  RE -down-&gt; [30 beneficiarios]
+}
+
+[10 voluntarios\n120 horas/año] -right-&gt; "PROGRAMA AIRE"
+
+note bottom of "PROGRAMA AIRE"
+  POSITIVO:
+  - Enfoque holístico bien estructurado
+  - Objetivos medibles (30 acciones, 5 reuniones, 10 estudios)
+
+  NEGATIVO:
+  - Sin gastos imputables (¿cómo se financia?)
+  - 120 horas anuales / 30 personas = 4h/persona/año
+end note
+@enduml
+</pre>
+</div>
+
+<p>
+<b>Evaluación:</b> Bien conceptualizado, críticamente subfinanciado
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgc6679af" class="outline-3">
+<h3 id="orgc6679af"><span class="section-number-3">4.2.</span> 3.2 Actividades Culturales (A6-A8, A11-A12) - RIESGO MEDIO</h3>
+<div class="outline-text-3" id="text-4-2">
+<p>
+<b>Positivos:</b>
+</p>
+<ul class="org-ul">
+<li>Contribuyen a visibilidad institucional</li>
+<li>Generan ingresos complementarios</li>
+<li>Cumplen objetivo estatutario (cultura defensa)</li>
+</ul>
+
+<p>
+<b>Negativos:</b>
+</p>
+<ul class="org-ul">
+<li>5 eventos culturales diferentes: dispersión de esfuerzos</li>
+<li>Previsión optimista: 300 entradas/concierto sin datos históricos</li>
+<li>Dos conciertos idénticos (Alicante/Alcoy): ¿saturación de mercado?</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org4ca4547" class="outline-3">
+<h3 id="org4ca4547"><span class="section-number-3">4.3.</span> 3.3 Matriz de Impacto vs. Recursos</h3>
+<div class="outline-text-3" id="text-4-3">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Actividad</th>
+<th scope="col" class="org-right">Beneficiarios</th>
+<th scope="col" class="org-right">Voluntarios</th>
+<th scope="col" class="org-right">Horas/año</th>
+<th scope="col" class="org-left">Impacto</th>
+<th scope="col" class="org-left">Eficiencia</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">A1 (AIRE)</td>
+<td class="org-right">30</td>
+<td class="org-right">10</td>
+<td class="org-right">120</td>
+<td class="org-left">ALTO</td>
+<td class="org-left">MEDIA</td>
+</tr>
+
+<tr>
+<td class="org-left">A2 (Sanitaria)</td>
+<td class="org-right">1.100</td>
+<td class="org-right">10</td>
+<td class="org-right">300</td>
+<td class="org-left">ALTO</td>
+<td class="org-left">BAJA</td>
+</tr>
+
+<tr>
+<td class="org-left">A4 (Empleo)</td>
+<td class="org-right">100</td>
+<td class="org-right">2</td>
+<td class="org-right">30</td>
+<td class="org-left">ALTO</td>
+<td class="org-left">ALTA</td>
+</tr>
+
+<tr>
+<td class="org-left">A5 (Formación)</td>
+<td class="org-right">20</td>
+<td class="org-right">2</td>
+<td class="org-right">120</td>
+<td class="org-left">MEDIO</td>
+<td class="org-left">ALTA</td>
+</tr>
+
+<tr>
+<td class="org-left">A6-A12 (Cult.)</td>
+<td class="org-right">variable</td>
+<td class="org-right">115</td>
+<td class="org-right">84</td>
+<td class="org-left">MEDIO</td>
+<td class="org-left">MEDIA</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgab06452" class="outline-2">
+<h2 id="orgab06452"><span class="section-number-2">5.</span> 4. Análisis de Objetivos y KPIs</h2>
+<div class="outline-text-2" id="text-5">
+</div>
+<div id="outline-container-orge29a1ec" class="outline-3">
+<h3 id="orge29a1ec"><span class="section-number-3">5.1.</span> 4.1 Coherencia Objetivos-Actividades</h3>
+<div class="outline-text-3" id="text-5-1">
+<div class="org-src-container">
+<pre class="src src-plantuml">@startuml
+rectangle "OBJETIVOS 2026" {
+  (OBJ 1: 150 miembros) as O1
+  (OBJ 2: 50.000€) as O2
+  (OBJ 3: 20 contratos) as O3
+  (OBJ 4: Cultura Defensa) as O4
+  (OBJ 5: 9.000€ asistencia) as O5
+}
+
+rectangle "ACTIVIDADES" {
+  [A1-A3: Sociales] as A1
+  [A4-A5: Empleo/Formación] as A2
+  [A6-A12: Culturales/Deportivas] as A3
+}
+
+O1 --&gt; A1
+O1 --&gt; A2
+O1 --&gt; A3
+
+O2 --&gt; A3
+O3 --&gt; A2
+O4 --&gt; A3
+O5 --&gt; A1
+
+note right of O2
+  CRÍTICO: Objetivo 50.000€
+  vs. Ingresos previstos 28.350€
+  BRECHA: -43.3%
+end note
+@enduml
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org44d6c62" class="outline-3">
+<h3 id="org44d6c62"><span class="section-number-3">5.2.</span> 4.2 Evaluación de Indicadores</h3>
+<div class="outline-text-3" id="text-5-2">
+<p>
+<b>OBJETIVO 1 (150 miembros):</b>
+</p>
+<ul class="org-ul">
+<li>✓ Actividades diversificadas para captación</li>
+<li>✗ No hay datos de membresía actual (¿crecimiento desde qué base?)</li>
+<li>✗ Ausente: estrategia de retención</li>
+</ul>
+
+<p>
+<b>OBJETIVO 2 (50.000€):</b>
+</p>
+<ul class="org-ul">
+<li>✗ INCOHERENTE: Ingresos previstos 28.350€</li>
+<li>✗ Incremento trimestral propuesto: 14.000€ vs. 28.350€ total</li>
+<li>✗ No hay plan específico para cerrar brecha</li>
+</ul>
+
+<p>
+<b>OBJETIVO 3 (20 contratos):</b>
+</p>
+<ul class="org-ul">
+<li>✓ Actividad A4 bien focalizada</li>
+<li>✓ Indicador realista (200 afiliados → 20 contratados = 10%)</li>
+<li>✗ Falta: convenios empresariales firmados actualmente</li>
+</ul>
+
+<p>
+<b>OBJETIVO 4 (Cultura Defensa):</b>
+</p>
+<ul class="org-ul">
+<li>✓ Múltiples actividades alineadas</li>
+<li>✓ Convenios universitarios existentes</li>
+<li>✗ Dispersión: ¿mejor concentrar esfuerzos?</li>
+</ul>
+
+<p>
+<b>OBJETIVO 5 (9.000€ asistencia):</b>
+</p>
+<ul class="org-ul">
+<li>✗ CRÍTICO: Presupuesto 3.000€, objetivo 9.000€</li>
+<li>✗ Contradicción fundamental en planificación</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org72a24e5" class="outline-2">
+<h2 id="org72a24e5"><span class="section-number-2">6.</span> 5. Estrategia de Comunicación y RRSS</h2>
+<div class="outline-text-2" id="text-6">
+</div>
+<div id="outline-container-orgfd620a3" class="outline-3">
+<h3 id="orgfd620a3"><span class="section-number-3">6.1.</span> 5.1 Oportunidades para RRSS</h3>
+<div class="outline-text-3" id="text-6-1">
+<p>
+<b>CONTENIDOS PUBLICABLES (Alto potencial):</b>
+</p>
+
+<ol class="org-ol">
+<li><b>Historias de Impacto Humano</b>
+<ul class="org-ul">
+<li>Testimonios anónimos beneficiarios Programa AIRE</li>
+<li>Casos de éxito en inserción laboral (A4)</li>
+<li>"De las operaciones especiales al mundo civil"</li>
+</ul></li>
+
+<li><b>Eventos Culturales</b>
+<ul class="org-ul">
+<li>Promoción conciertos (A6, A12): carteles, previas, directos</li>
+<li>Exposiciones fotográficas (A11): contenido visual de calidad</li>
+<li>Conferencias (A7): clips educativos, infografías</li>
+</ul></li>
+
+<li><b>Contenido Educativo</b>
+<ul class="org-ul">
+<li>Cultura de Defensa: vídeos cortos historia militar</li>
+<li>Valores de las Fuerzas Armadas: storytelling emocional</li>
+<li>Colaboraciones universitarias: legitimidad académica</li>
+</ul></li>
+
+<li><b>Eventos Deportivos</b>
+<ul class="org-ul">
+<li>Raid Solidario "Viriato" (A9): contenido dinámico, retos</li>
+<li>Duatlón Solidario (A10): cobertura en tiempo real, comunidad</li>
+</ul></li>
+</ol>
+
+<p>
+<b>CONTENIDOS NO PUBLICABLES (Riesgos):</b>
+</p>
+
+<ol class="org-ol">
+<li><b>Datos Personales Sensibles</b>
+<ul class="org-ul">
+<li>Información médica/psicológica de beneficiarios</li>
+<li>Situaciones de vulnerabilidad específicas</li>
+<li>Detalles de viudas/huérfanos (protección menores)</li>
+</ul></li>
+
+<li><b>Información Operativa Militar</b>
+<ul class="org-ul">
+<li>Datos actuales de Unidades de Operaciones Especiales</li>
+<li>Identidades de personal activo sin consentimiento</li>
+<li>Procedimientos tácticos o de seguridad</li>
+</ul></li>
+
+<li><b>Datos Financieros Detallados</b>
+<ul class="org-ul">
+<li>Desglose individual de ayudas monetarias</li>
+<li>Información nominal de donantes privados</li>
+<li>Contratos específicos con empresas colaboradoras</li>
+</ul></li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-org9e42ca2" class="outline-3">
+<h3 id="org9e42ca2"><span class="section-number-3">6.2.</span> 5.2 Estrategia RRSS Recomendada</h3>
+<div class="outline-text-3" id="text-6-2">
+<p>
+<b>PLATAFORMAS PRIORITARIAS:</b>
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Plataforma</th>
+<th scope="col" class="org-left">Objetivo</th>
+<th scope="col" class="org-left">Contenido Principal</th>
+<th scope="col" class="org-left">Frecuencia</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">LinkedIn</td>
+<td class="org-left">Inserción laboral</td>
+<td class="org-left">Ofertas empleo, casos éxito, empresas</td>
+<td class="org-left">3x semana</td>
+</tr>
+
+<tr>
+<td class="org-left">Facebook</td>
+<td class="org-left">Comunidad amplia</td>
+<td class="org-left">Eventos, testimonios, cultura defensa</td>
+<td class="org-left">5x semana</td>
+</tr>
+
+<tr>
+<td class="org-left">Instagram</td>
+<td class="org-left">Captación jóvenes</td>
+<td class="org-left">Visual eventos deportivos/culturales</td>
+<td class="org-left">Diario</td>
+</tr>
+
+<tr>
+<td class="org-left">Twitter/X</td>
+<td class="org-left">Institucional</td>
+<td class="org-left">Convenios, colaboraciones, noticias</td>
+<td class="org-left">2x semana</td>
+</tr>
+
+<tr>
+<td class="org-left">YouTube</td>
+<td class="org-left">Contenido evergreen</td>
+<td class="org-left">Conferencias completas, documentales</td>
+<td class="org-left">2x mes</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+<b>CALENDARIO DE CONTENIDOS 2026:</b>
+</p>
+
+<ul class="org-ul">
+<li><b>Enero-Marzo:</b> Lanzamiento campaña "150 Miembros"</li>
+<li><b>Abril-Junio:</b> Cobertura exposiciones fotográficas</li>
+<li><b>Julio-Septiembre:</b> Campaña inserción laboral + eventos deportivos</li>
+<li><b>Octubre-Diciembre:</b> Balance anual + captación donaciones</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgbc3564d" class="outline-3">
+<h3 id="orgbc3564d"><span class="section-number-3">6.3.</span> 5.3 Riesgos Reputacionales</h3>
+<div class="outline-text-3" id="text-6-3">
+<ol class="org-ol">
+<li><b>TRANSPARENCIA FINANCIERA</b>
+<ul class="org-ul">
+<li>Publicar memoria económica anual (obligación legal)</li>
+<li>Clarificar destino del 69.3% superávit previsto</li>
+</ul></li>
+
+<li><b>PROFESIONALIDAD ASISTENCIAL</b>
+<ul class="org-ul">
+<li>Comunicar titulaciones de voluntarios en áreas sanitarias</li>
+<li>Protocolos de confidencialidad y ética</li>
+</ul></li>
+
+<li><b>COHERENCIA DISCURSO</b>
+<ul class="org-ul">
+<li>Resolver contradicciones entre objetivos y presupuesto</li>
+<li>Evitar promesas incumplibles en captación de fondos</li>
+</ul></li>
+</ol>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgad45fac" class="outline-2">
+<h2 id="orgad45fac"><span class="section-number-2">7.</span> 6. Recomendaciones Estratégicas</h2>
+<div class="outline-text-2" id="text-7">
+</div>
+<div id="outline-container-orgcb5fa01" class="outline-3">
+<h3 id="orgcb5fa01"><span class="section-number-3">7.1.</span> 6.1 Corto Plazo (1-6 meses)</h3>
+<div class="outline-text-3" id="text-7-1">
+<ol class="org-ol">
+<li><b>CRÍTICO: Resolver incoherencias presupuestarias</b>
+<ul class="org-ul">
+<li>Ajustar OBJ 2 a realidad (28.350€) o detallar plan para 50.000€</li>
+<li>Explicar destino del superávit de 19.650€</li>
+<li>Alinear OBJ 5 (9.000€) con presupuesto real (3.000€)</li>
+</ul></li>
+
+<li><b>Profesionalizar áreas críticas</b>
+<ul class="org-ul">
+<li>Contratar 1 psicólogo/trabajador social a tiempo parcial</li>
+<li>Establecer seguros de responsabilidad civil</li>
+<li>Protocolos escritos para Programa AIRE</li>
+</ul></li>
+
+<li><b>Lanzar estrategia digital</b>
+<ul class="org-ul">
+<li>Crear perfiles institucionales en RRSS principales</li>
+<li>Contratar community manager voluntario/becario</li>
+<li>Calendario editorial primer trimestre</li>
+</ul></li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-org7dfa6b1" class="outline-3">
+<h3 id="org7dfa6b1"><span class="section-number-3">7.2.</span> 6.2 Medio Plazo (6-12 meses)</h3>
+<div class="outline-text-3" id="text-7-2">
+<ol class="org-ol">
+<li><b>Concentrar esfuerzos culturales</b>
+<ul class="org-ul">
+<li>Evaluar: ¿2 conciertos o 1 de mayor impacto?</li>
+<li>Fusionar actividades similares (eficiencia recursos)</li>
+</ul></li>
+
+<li><b>Consolidar alianzas empresariales</b>
+<ul class="org-ul">
+<li>Formalizar 10 convenios empleo (A4)</li>
+<li>Base de datos CRM beneficiarios/empresas</li>
+</ul></li>
+
+<li><b>Transparencia activa</b>
+<ul class="org-ul">
+<li>Publicar informes trimestrales en web</li>
+<li>Memoria de impacto social 2026</li>
+</ul></li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-orgb44a32c" class="outline-3">
+<h3 id="orgb44a32c"><span class="section-number-3">7.3.</span> 6.3 Largo Plazo (2027+)</h3>
+<div class="outline-text-3" id="text-7-3">
+<ol class="org-ol">
+<li><b>Modelo híbrido profesional-voluntario</b>
+<ul class="org-ul">
+<li>Plantilla mínima: 2-3 profesionales</li>
+<li>Voluntarios para ejecución actividades puntuales</li>
+</ul></li>
+
+<li><b>Diversificación financiera</b>
+<ul class="org-ul">
+<li>Reducir dependencia subvenciones al 50%</li>
+<li>Desarrollar programa "Empresas Solidarias MOE"</li>
+<li>Crowdfunding para proyectos específicos</li>
+</ul></li>
+
+<li><b>Escalabilidad</b>
+<ul class="org-ul">
+<li>Replicar modelo en otras provincias</li>
+<li>Federación con fundaciones similares</li>
+</ul></li>
+</ol>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgcf19c03" class="outline-2">
+<h2 id="orgcf19c03"><span class="section-number-2">8.</span> 7. Conclusiones</h2>
+<div class="outline-text-2" id="text-8">
+</div>
+<div id="outline-container-orgc18daa6" class="outline-3">
+<h3 id="orgc18daa6"><span class="section-number-3">8.1.</span> 7.1 Fortalezas Destacadas</h3>
+<div class="outline-text-3" id="text-8-1">
+<ul class="org-ul">
+<li>Misión social clara y necesaria (colectivo militar vulnerable)</li>
+<li>Diversificación de actividades bien conceptualizada</li>
+<li>Alianzas estratégicas con instituciones de prestigio</li>
+<li>Compromiso genuino del voluntariado</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org96311c3" class="outline-3">
+<h3 id="org96311c3"><span class="section-number-3">8.2.</span> 7.2 Debilidades Críticas</h3>
+<div class="outline-text-3" id="text-8-2">
+<ul class="org-ul">
+<li><b>INCOHERENCIAS PRESUPUESTARIAS GRAVES</b>: objetivos vs. recursos</li>
+<li>Dependencia total de voluntariado: insostenible a medio plazo</li>
+<li>Falta de profesionalización en áreas sensibles (salud mental)</li>
+<li>Opacidad en gestión del superávit económico</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org7445d80" class="outline-3">
+<h3 id="org7445d80"><span class="section-number-3">8.3.</span> 7.3 Viabilidad Global</h3>
+<div class="outline-text-3" id="text-8-3">
+<p>
+<b>DIAGNÓSTICO:</b> La Fundación Roble y Machete presenta un proyecto <b><b>NOBLE pero FRÁGIL</b></b>. 
+</p>
+
+<ul class="org-ul">
+<li><b>Viabilidad social:</b> ALTA (necesidad real, beneficiarios identificados)</li>
+<li><b>Viabilidad operativa:</b> MEDIA-BAJA (recursos humanos insuficientes)</li>
+<li><b>Viabilidad económica:</b> MEDIA (ingresos previstos vs. gastos aceptable, pero incoherente con objetivos declarados)</li>
+<li><b>Viabilidad reputacional:</b> MEDIA (riesgo por falta de transparencia)</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org3908b2b" class="outline-3">
+<h3 id="org3908b2b"><span class="section-number-3">8.4.</span> 7.4 Recomendación Final</h3>
+<div class="outline-text-3" id="text-8-4">
+<p>
+La fundación debe priorizar <b><b>CONSOLIDACIÓN sobre EXPANSIÓN</b></b> en 2026:
+</p>
+
+<ol class="org-ol">
+<li>Resolver contradicciones documentales antes de ejecutar</li>
+<li>Profesionalizar mínimamente la estructura (1-2 contrataciones)</li>
+<li>Concentrar esfuerzos en 2-3 actividades de alto impacto</li>
+<li>Implementar transparencia radical (RRSS, informes públicos)</li>
+</ol>
+
+<p>
+<b>POTENCIAL DE RRSS:</b> ALTO, pero requiere estrategia coherente y recursos dedicados. El contenido está, falta la ejecución profesional.
+</p>
+
+<blockquote>
+<p>
+La mayor amenaza para esta fundación no es la falta de recursos, sino la <b><b>brecha entre ambición y capacidad operativa real</b></b>.
+</p>
+</blockquote>
+
+<p>
+&#x2014;
+<b>Documento generado el 16/01/2026 por análisis experto independiente</b>
+</p>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="date">Date: 16 de enero de 2026</p>
+<p class="author">Author: Análisis Experto en Fundaciones Sin Ánimo de Lucro y RRSS</p>
+<p class="date">Created: 2026-01-16 vie 16:40</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+
+    <script>
+    (function() {
+        const pass = "Fundacion3026@";
+        if (sessionStorage.getItem('auth_rym') !== 'true') {
+            const input = prompt("SISTEMA DE ANÁLISIS ESTRATÉGICO - FUNDACIÓN\nIntroduzca contraseña:");
+            if (input === pass) {
+                sessionStorage.setItem('auth_rym', 'true');
+            } else {
+                alert("Acceso denegado");
+                window.location.href = "https://google.com";
+            }
+        }
+    })();
+    </script>
+    </body>
+</html>
